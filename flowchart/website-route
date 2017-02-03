@@ -1,0 +1,33 @@
+graph TD
+  index((首页))-->clothesStore(衣服/配件列表)
+  index-->service(增值服务)
+  index-->customerShow(客户展示)
+  index-->aboutUs(关于我们)
+  index-->login(登录)
+
+  subgraph SPA
+    clothesStore-->clothesFilter>分类展示]
+    clothesFilter-->showClothes(单件展示)
+    showClothes-->rentList(租赁单)
+    rentList-->wechatPay(微信支付)
+  end
+
+  service-->makeup(化妆造型)
+  service-->take(预约送货)
+
+  take--少量-->quickTake(闪送)
+  take--大量-->didiTake(滴滴)
+  take--较远-->express(快递)
+
+  aboutUs-->companyInfo(公司简介)
+  aboutUs-->map(路线导航)
+  aboutUs-->feedback(用户反馈)
+
+  login-->register(注册)
+  login-->isAdmin{管理员}
+  register-->isAdmin
+  isAdmin--不是-->member(会员中心)
+  isAdmin--是-->dashboard(后台管理)
+
+  dashboard-->offlineRentManager(线下数据录入)
+  dashboard-->rentStat(统计分析)
