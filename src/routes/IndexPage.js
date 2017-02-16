@@ -22,11 +22,13 @@ function IndexPage(props) {
           <AdditionalComponent />
         </Col>
       </Row>
-      <Row>
-        <Col>
-          { props.children }
-        </Col>
-      </Row>
+
+      { props.children }
+
+      <div className={styles.footer}>
+        
+      </div>
+
     </div>
   );
 }
