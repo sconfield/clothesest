@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './AdditionalComponent.css';
 import { Link } from 'dva/router';
 
-import { Icon, Button, Popover } from 'antd';
+import { Button, Popover } from 'antd';
 
 function LoginAndMapComponent() {
   const wechat = (
