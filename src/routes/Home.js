@@ -28,64 +28,68 @@ function Home(props) {
   return (
     <IndexPage location={ props.location }>
       <Row>
-        <Col offset={2} span={20}>
+        <Col offset={4} span={16}>
           <Card bodyStyle={{ padding: 6 }}>
             <img src={img1} />
           </Card>
         </Col>
       </Row>
       <Row>
-        <Col offset={11} span={2}>
-          <h1>最新服装</h1>
+        <Col>
+          <div className={styles.subHeader}>
+            <h1>最新服装</h1>
+          </div>
         </Col>
       </Row>
       <Row>
-        <Col offset={2} span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col offset={4} span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img2} />
           </Card>
         </Col>
-        <Col span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img3} />
           </Card>
         </Col>
-        <Col span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img4} />
           </Card>
         </Col>
-        <Col span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img5} />
           </Card>
         </Col>
       </Row>
       <Row>
-        <Col offset={2} span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col offset={4} span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img6} />
           </Card>
         </Col>
-        <Col span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img7} />
           </Card>
         </Col>
-        <Col span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img8} />
           </Card>
         </Col>
-        <Col span={5}>
-          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密">
+        <Col span={4}>
+          <Card bodyStyle={{ padding: 3 }} title="维多利亚的秘密" className={styles.smallCard}>
             <img src={img9} />
           </Card>
         </Col>
       </Row>
       <Row>
-        <Col offset={11} span={2}>
-          <h1>推荐给您</h1>
+        <Col>
+          <div className={styles.subHeader}>
+            <h1>推荐给您</h1>
+          </div>
         </Col>
       </Row>
       <Row>
@@ -98,8 +102,10 @@ function Home(props) {
         </Col>
       </Row>
       <Row>
-        <Col offset={11} span={2}>
-          <h1>为您服务</h1>
+        <Col>
+          <div className={styles.subHeader}>
+            <h1>为您服务</h1>
+          </div>
         </Col>
       </Row>
       <Row>
