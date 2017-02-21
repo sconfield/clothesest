@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
 
-import { Row, Col } from 'antd';
+import { Row, Col, BackTop } from 'antd';
 
 import MenuComponent from '../components/MenuComponent.js';
 import LogoComponent from '../components/LogoComponent.js';
@@ -28,6 +28,10 @@ function IndexPage(props) {
       <div className={styles.footer}>
         <h1>footer</h1>
       </div>
+
+      <BackTop>
+        <div className={styles.backTopInner}>UP</div>
+      </BackTop>
 
     </div>
   );

@@ -1,0 +1,10 @@
+.normal {
+  padding-top: 10px;
+}
+
+.additionalBtn {
+  background-color: #6ecd56;
+  background-image: linear-gradient(142deg, #bdcd56, #96cd56 31%, #6ecd56 65%, #56cd66);
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.1), 0 -1px 0 rgba(255, 255, 255, 0.1);
+}

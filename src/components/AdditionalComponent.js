@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from './AdditionalComponent.css';
 import { Link } from 'dva/router';
-import { Button, Popover } from 'antd';
+import { Button, Popover, Badge } from 'antd';
 
 function LoginAndMapComponent() {
   const wechat = (
@@ -12,18 +13,22 @@ function LoginAndMapComponent() {
   );
 
   return (
-    <div>
-      <Button type="primary" icon="environment" size="large">
+    <div className={styles.normal}>
+      <Button type="primary" icon="environment"
+        size="large" className={styles.additionalBtn}>
         地图导航
       </Button>
       &nbsp;
-      <Button type="dashed" icon="user">
-        <Link to="/login">登录</Link>
-      </Button>
-      &nbsp;
       <Popover placement="bottomRight" title="微信二维码" content={wechat}>
-        <Button>微信</Button>
+        <Button className={styles.additionalBtn}>微信</Button>
       </Popover>
+      &nbsp;
+      <Badge count={6}>
+        <Button type="dashed" icon="user"
+          className={styles.additionalBtn}>
+          <Link to="/login">登录</Link>
+        </Button>
+      </Badge>
     </div>
   );
 }
