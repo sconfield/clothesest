@@ -11,7 +11,7 @@ import AdditionalComponent from '../components/AdditionalComponent.js';
 function IndexPage(props) {
   return (
     <div className={styles.normal}>
-      <Row>
+      <Row className={styles.navigating}>
         <Col span={4}>
           <LogoComponent />
         </Col>

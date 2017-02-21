@@ -74,7 +74,7 @@ function ClothesStore(props) {
         <Col span={4}>
           <FilterComponent />
         </Col>
-        <Col span={19} id="pubuliu">
+        <Col span={19}>
           <MasonryComponent clothes={clothes} />
         </Col>
       </Row>
