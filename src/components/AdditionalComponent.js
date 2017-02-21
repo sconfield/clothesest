@@ -1,7 +1,5 @@
 import React from 'react';
-import styles from './AdditionalComponent.css';
 import { Link } from 'dva/router';
-
 import { Button, Popover } from 'antd';
 
 function LoginAndMapComponent() {
@@ -14,7 +12,7 @@ function LoginAndMapComponent() {
   );
 
   return (
-    <div className={styles.normal}>
+    <div>
       <Button type="primary" icon="environment" size="large">
         地图导航
       </Button>

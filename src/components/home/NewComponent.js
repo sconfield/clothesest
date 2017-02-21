@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './NewComponent.css';
 import { Card, Row, Col } from 'antd';
 import SubHeaderComponent from './SubHeaderComponent.js';
 
@@ -13,7 +12,7 @@ function NewComponent(props) {
     }
     return (
       <Col offset={offsetVal} span={4} key={idx}>
-        <Card bodyStyle={{ padding: 3 }} title={"维多利亚的秘密_"+idx}>
+        <Card bodyStyle={{ padding: 3 }} style={{maxHeight: '410px'}}>
           <img src={imgUrl} />
         </Card>
       </Col>
@@ -21,7 +20,7 @@ function NewComponent(props) {
   };
 
   return (
-    <div className={styles.normal}>
+    <div>
       <SubHeaderComponent message="最新服装" />
       <Row>
         {column_first.map(createCard)}

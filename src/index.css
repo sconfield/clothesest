@@ -1,6 +1,6 @@
 
 html, body, :global(#root) {
   font-family: Georgia, sans-serif;
-  background-color: #6ecd56;
-  background-image: linear-gradient(142deg, #bdcd56, #96cd56 31%, #6ecd56 65%, #56cd66);
+  background-color: #d16098;
+  background-image: linear-gradient(142deg, #f4a35b, #f4655b 31%, #d16098 65%, #ca3469);
 }

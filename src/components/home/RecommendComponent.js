@@ -1,17 +1,16 @@
 import React from 'react';
-import styles from './RecommendComponent.css';
 import { Row, Col, Carousel, Card } from 'antd';
 import SubHeaderComponent from './SubHeaderComponent.js';
 
 function RecommendComponent(props) {
   const createImg = (imgUrl, idx)=>(
-    <Card bodyStyle={{ padding: 3}}>
-      <img src={imgUrl} key={idx} />
+    <Card bodyStyle={{ padding: 3}} key={idx}>
+      <img src={imgUrl} />
     </Card>
   );
 
   return (
-    <div className={styles.normal}>
+    <div>
       <SubHeaderComponent message="推荐给您" />
       <Row>
         <Col offset={6} span={12}>

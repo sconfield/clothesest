@@ -1,12 +1,11 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './ClothesStore.css';
 import IndexPage from './IndexPage.js';
 
 function ClothesStore(props) {
   return (
     <IndexPage location={ props.location }>
-      <div className={styles.normal}>
+      <div>
         Route Component: ClothesStore
       </div>
     </IndexPage>

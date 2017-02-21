@@ -26,7 +26,7 @@ function IndexPage(props) {
       { props.children }
 
       <div className={styles.footer}>
-        
+        <h1>footer</h1>
       </div>
 
     </div>

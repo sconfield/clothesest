@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './MenuComponent.css';
 import { Link } from 'dva/router';
-
 import { Menu, Icon } from 'antd';
 
 function MenuComponent(props) {
@@ -16,7 +15,7 @@ function MenuComponent(props) {
   return (
     <div className={styles.normal}>
       <Menu onClick={ handleClick } selectedKeys={ [props.selected] }
-        mode="horizontal">
+        mode="horizontal" className={styles.colorBar}>
         <MenuItem key="index">
           <Link to="/">首页</Link>
         </MenuItem>
